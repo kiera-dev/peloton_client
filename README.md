@@ -4,7 +4,7 @@
 Based on endpoints documented at:  
 https://app.swaggerhub.com/apis/DovOps/peloton-unofficial-api/0.2.3
 
-In the broad strokes, this API client for python can access user:
+In the broad strokes, this API client for python can access user:  
  - workout data
  - public account data
  - public account summary
