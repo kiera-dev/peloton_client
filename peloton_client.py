@@ -72,12 +72,12 @@ class PelotonClient:
 
         return response_data
 
-    def fetch_workouts(self, limit=10, fetch_all=False):
+    def fetch_workouts(self, limit=10, fetch_all=False, page=0):
         """Method to fetch user's workout data.  Defaults to 10 workouts."""
         workouts = []
         request_uri = '/api/user/%s/workouts' % self.user_id
         request_parameters = {
-            'page': 0,
+            'page': page,
             'limit': limit,
             'joins': 'ride,ride.instructor'
         }
