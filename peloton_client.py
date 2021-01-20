@@ -169,6 +169,24 @@ class PelotonClient:
         )
         return response[0]
 
+    def fetch_user_challenges_past(self):
+        request_uri = '/api/user/%s/challenges/past' % self.user_id
+        request_parameters = {'has_joined': True}
+        response = self._call_api(
+            request_uri,
+            request_parameters,
+        )
+        return response[0]
+
+    def fetch_user_challenges_current(self):
+        request_uri = '/api/user/%s/challenges/current' % self.user_id
+        request_parameters = {'has_joined': True}
+        response = self._call_api(
+            request_uri,
+            request_parameters,
+        )
+        return response[0]
+
     def fetch_ride(self, ride_id):
         """Method to fetch individual ride data."""
         request_uri = '/api/ride/%s/details' % ride_id
