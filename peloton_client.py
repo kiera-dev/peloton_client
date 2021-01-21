@@ -170,6 +170,7 @@ class PelotonClient:
         return response[0]
 
     def fetch_user_challenges_past(self):
+        """Method to fetch challenges user has joined in the past."""
         request_uri = '/api/user/%s/challenges/past' % self.user_id
         request_parameters = {'has_joined': True}
         response = self._call_api(
@@ -179,6 +180,7 @@ class PelotonClient:
         return response[0]
 
     def fetch_user_challenges_current(self):
+        """Method to fetch challenges user is currently participating in"""
         request_uri = '/api/user/%s/challenges/current' % self.user_id
         request_parameters = {'has_joined': True}
         response = self._call_api(
