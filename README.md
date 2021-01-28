@@ -25,3 +25,5 @@ In the broad strokes, this API client for python can access user:
     here is a very simple example:   
      `client = peloton_client.PelotonClient(username=“youremail@email.com", password=“yourpassword”)`   
      `workouts = client.fetch_workouts()`  
+
+See https://github.com/that-other-alexa/workout_dash for a working example.
