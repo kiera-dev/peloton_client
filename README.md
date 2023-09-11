@@ -26,4 +26,4 @@ In the broad strokes, this API client for python can access user:
      `client = peloton_client.PelotonClient(username=“youremail@email.com", password=“yourpassword”)`   
      `workouts = client.fetch_workouts()`  
 
-See https://github.com/kiera-dev/workout_dash for a working example.
+* Peloton changed the way they authenticate. Will have to do some digging. 
