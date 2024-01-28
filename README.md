@@ -1,3 +1,5 @@
+Update: Oh snap this still works
+
 # peloton_client
 ## Wrapper for OnePeloton Web API
 
@@ -15,15 +17,34 @@ In the broad strokes, this API client for python can access user:
  - workout metrics
  
 **How to use:**   
-  - git clone this repository into your project folder.  
-    `git clone https://github.com/kiera-bot/peloton_client.git`   
-  
-  - import peloton client into your .py   
-     `from peloton_client import peloton_client`   
-   
-  - authenticate.  
-    here is a very simple example:   
-     `client = peloton_client.PelotonClient(username=“youremail@email.com", password=“yourpassword”)`   
-     `workouts = client.fetch_workouts()`  
+git clone this repository into your project folder. 
 
-* Peloton changed the way they authenticate. Will have to do some digging. 
+```
+git clone https://github.com/kiera-bot/peloton_client.git
+```
+  
+import peloton client into your .py
+```   
+from peloton_client import peloton_client
+```
+
+make sure you pip install requests 
+   
+authenticate. here is a very simple example:
+```
+client = peloton_client.PelotonClient(username="youremail@email.com", password="yourpassword")
+workouts = client.fetch_workouts()
+```
+
+in sum, a simple main.py should look like this: 
+```
+from peloton_client import peloton_client
+
+client = peloton_client.PelotonClient(username="youremail@email.com", password="yourpassword")
+workouts = client.fetch_workouts()
+print(workouts)
+
+```
+
+This will return a JSON object with your workout metrics.
+
