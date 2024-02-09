@@ -1,7 +1,7 @@
 Update: Oh snap this still works
 
 # peloton_client
-## Wrapper for OnePeloton Web API
+## Wrapper for Peloton Web API
 
 Based on endpoints documented at:  
 https://app.swaggerhub.com/apis/DovOps/peloton-unofficial-api/0.2.3
